@@ -1,0 +1,20 @@
+{
+  "paper": true,
+  "legend_placement": "inside_axes",
+  "target_model_label": false,
+  "font_family": "TeX Gyre Termes",
+  "font_size_pt": 10.0,
+  "standalone_width_inches": 3.4,
+  "standalone_height_inches": 3.4,
+  "joined_panel_gap": 0,
+  "joined_panel_height_ratios": [
+    2,
+    1
+  ],
+  "combined_width_inches": 6.95,
+  "units": "upright math roman",
+  "vector_format": "pdf",
+  "teec_y_notation_policy": "regular_if_fits_else_scientific",
+  "teec_y_notation": "regular",
+  "usage": "Insert standalone paper figures at about 3.4 inches wide (one column or half a full-width figure) for approximately 10-point text; combined figures span the full text width."
+}

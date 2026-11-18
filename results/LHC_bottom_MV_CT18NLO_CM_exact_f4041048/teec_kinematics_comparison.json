@@ -1,0 +1,106 @@
+{
+  "numerator": {
+    "label": "Exact",
+    "config": {
+      "collider": "LHC",
+      "quark": "bottom",
+      "sqrt_s": 5020.0,
+      "A": 208.0,
+      "nucleus": "Pb",
+      "proton_area": 36.211479,
+      "eta_frame": "CM",
+      "cm_rapidity": 0.465,
+      "lab_cm_boost": 0.0,
+      "eta1": 4.0,
+      "eta2": 4.0,
+      "mass": 4.75,
+      "alpha_s": 0.2,
+      "alpha_s_mode": "auto",
+      "ren_scale": "pdf_scale",
+      "ren_mu_fixed": 9.5,
+      "ren_scale_factor": 1.0,
+      "T_F": 0.5,
+      "target_model": "MV",
+      "target_options": {
+        "table_path": "data/mv_bk_gamma1.npz",
+        "source_dir": null,
+        "table_variant": "fitted_rmin_1e-3",
+        "interpolation": "linear",
+        "uv_tail": "matched_power",
+        "x_above_x0": "freeze"
+      },
+      "pdf_name": "CT18NLO",
+      "pdf_options": {
+        "member": 0,
+        "data_path": null,
+        "lhapdf_config": null,
+        "range_policy": "error"
+      },
+      "pdf_scale": "pair_mt",
+      "pdf_mu_fixed": 9.5,
+      "xt_max": 0.01,
+      "p_min": 0.0,
+      "p_max": "inf",
+      "radial_scale": 4.75,
+      "kinematics": "exact",
+      "proposal": "auto"
+    }
+  },
+  "denominator": {
+    "label": "Eikonal",
+    "config": {
+      "collider": "LHC",
+      "quark": "bottom",
+      "sqrt_s": 5020.0,
+      "A": 208.0,
+      "nucleus": "Pb",
+      "proton_area": 36.211479,
+      "eta_frame": "CM",
+      "cm_rapidity": 0.465,
+      "lab_cm_boost": 0.0,
+      "eta1": 4.0,
+      "eta2": 4.0,
+      "mass": 4.75,
+      "alpha_s": 0.2,
+      "alpha_s_mode": "auto",
+      "ren_scale": "pdf_scale",
+      "ren_mu_fixed": 9.5,
+      "ren_scale_factor": 1.0,
+      "T_F": 0.5,
+      "target_model": "MV",
+      "target_options": {
+        "table_path": "data/mv_bk_gamma1.npz",
+        "source_dir": null,
+        "table_variant": "fitted_rmin_1e-3",
+        "interpolation": "linear",
+        "uv_tail": "matched_power",
+        "x_above_x0": "freeze"
+      },
+      "pdf_name": "CT18NLO",
+      "pdf_options": {
+        "member": 0,
+        "data_path": null,
+        "lhapdf_config": null,
+        "range_policy": "error"
+      },
+      "pdf_scale": "pair_mt",
+      "pdf_mu_fixed": 9.5,
+      "xt_max": 0.01,
+      "p_min": 0.0,
+      "p_max": "inf",
+      "radial_scale": 4.75,
+      "kinematics": "eikonal",
+      "proposal": "auto"
+    }
+  },
+  "definition": "100 * (RpA_numerator / RpA_denominator - 1)",
+  "normalization": "differential RpA; no unit-area normalization",
+  "curve_power": 15,
+  "curve_replicas": 8,
+  "curve_seed": 6941,
+  "tau_plot_range": [
+    0.1,
+    0.9
+  ],
+  "fixed_note": "$x_{t,\\max}=0.01$"
+}

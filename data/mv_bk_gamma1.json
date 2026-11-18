@@ -1,0 +1,219 @@
+{
+  "format_version": 1,
+  "keys": [
+    "p",
+    "Au_c0.5",
+    "Au_c1.0",
+    "Pb_c0.5",
+    "Pb_c1.0"
+  ],
+  "initial_condition": {
+    "Qs0_sq": 0.061,
+    "gamma": 1.0,
+    "ec": 35.3,
+    "C_sq": 4.97,
+    "LambdaQCD_GeV": 0.241,
+    "Nf": 3,
+    "alpha_s_max": 0.7,
+    "kernel": "Balitsky",
+    "fit": "2311.10491 four-parameter median"
+  },
+  "x0": 0.009999999999999995,
+  "x_range": [
+    1.1253517471925887e-09,
+    0.009999999999999995
+  ],
+  "k_range_GeV": [
+    0.010000000000000004,
+    100.00000000000004
+  ],
+  "proton_area_GeV2": 36.211479,
+  "normalization": "F(k,x)=integral d2r exp(-ik.r) S(r,x)/(2pi)^2; integral d2k F=1",
+  "units": "GeV^-2, per unit transverse area; no area or A factor included",
+  "variants": [
+    "fitted_rmin_1e-3",
+    "fitted_all_r"
+  ],
+  "source_directory": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files",
+  "sources": [
+    {
+      "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/from_Jani/MVe_bk_bayes_p.dat",
+      "sha256": "83a51d2283c6b192d574e5d818e5bf8cc04c43a413be214446ad2b3672c58cc9",
+      "role": "coordinate N for Qs and initial-condition validation",
+      "source_N_range": [
+        2.323870034335176e-13,
+        1.001378719695022
+      ],
+      "initial_max_relative_error": 3.2076552525239777e-10
+    },
+    {
+      "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/output_old/Fkx_data/Fk_x_p_r_ge_0.001006938631475812.csv",
+      "sha256": "653ceaf7ea44dffb710e25f611caa65333be7fff1152b6f1f604a3b2743997ac",
+      "role": "F(k,x) fitted_rmin_1e-3"
+    },
+    {
+      "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/output_old/Fkx_data/Fk_x_p.csv",
+      "sha256": "e4ff6525af7580050b807eec01bee63e88a78b5c79c011d39a23d02f0bc89280",
+      "role": "F(k,x) fitted_all_r"
+    },
+    {
+      "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/from_Jani/p_bayes_fourier_transform.csv",
+      "sha256": "0ce7b34480c78c82cda171afe5f30a38b2bd027679091d6a31cf388912552f74",
+      "role": "original Fourier metadata and fit identification"
+    },
+    {
+      "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/from_Jani/MVe_bk_bayes_Au_c0.5.dat",
+      "sha256": "0a4d1f254a4c28d357edc9696d3e508c858364e3673f989e472d4d7a426b409f",
+      "role": "coordinate N for Qs and initial-condition validation",
+      "source_N_range": [
+        6.760890709812232e-13,
+        1.001340833658751
+      ],
+      "initial_max_relative_error": 7.67881314089891e-11
+    },
+    {
+      "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/output_old/Fkx_data/Fk_x_Au_c0.5_r_ge_0.001006938631475812.csv",
+      "sha256": "f9bb9d545304506d77390451a5f590014c0366f2fdf01e06983e1bc643b46903",
+      "role": "F(k,x) fitted_rmin_1e-3"
+    },
+    {
+      "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/output_old/Fkx_data/Fk_x_Au_c0.5.csv",
+      "sha256": "3349561e9b72576cf762044734e45c5f3966625116871cdab16ba7bfb4362c7a",
+      "role": "F(k,x) fitted_all_r"
+    },
+    {
+      "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/from_Jani/Au_bayes_fourier_transform_c0.5.csv",
+      "sha256": "3dacc885b51b161bc2b61af5acd4c9e41c7d6dcf73868557006e3a57d8789c97",
+      "role": "original Fourier metadata and fit identification"
+    },
+    {
+      "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/from_Jani/MVe_bk_bayes_Au_c1.0.dat",
+      "sha256": "836cb942bba9c47e052d69ebf4c6a7855049f9d62f47ef17de1938d5fdd2e48d",
+      "role": "coordinate N for Qs and initial-condition validation",
+      "source_N_range": [
+        1.352178141962446e-12,
+        1.000868890329973
+      ],
+      "initial_max_relative_error": 5.531530788971395e-11
+    },
+    {
+      "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/output_old/Fkx_data/Fk_x_Au_c1.0_r_ge_0.001006938631475812.csv",
+      "sha256": "7555b2930befa2c48d9e49561dfedeb4c937548c05d6bea8c97317abd665f411",
+      "role": "F(k,x) fitted_rmin_1e-3"
+    },
+    {
+      "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/output_old/Fkx_data/Fk_x_Au_c1.0.csv",
+      "sha256": "a039271cef5bdcf9e4b6e5f04d011d433af32d5edf4f5985b6fe5be4f63eb912",
+      "role": "F(k,x) fitted_all_r"
+    },
+    {
+      "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/from_Jani/Au_bayes_fourier_transform_c1.0.csv",
+      "sha256": "bffb352ea66eb59d43449adc7cd02202b94b1ed211a9afad5bbc68e4adcfc24b",
+      "role": "original Fourier metadata and fit identification"
+    },
+    {
+      "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/from_Jani/MVe_bk_bayes_Pb_c0.5.dat",
+      "sha256": "11275b7faa2c2b3743b3f3b919791f71b41c6f0b470d83e93896a91a512cbf9b",
+      "role": "coordinate N for Qs and initial-condition validation",
+      "source_N_range": [
+        6.884455840207659e-13,
+        1.00118911333984
+      ],
+      "initial_max_relative_error": 1.1654277543016178e-10
+    },
+    {
+      "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/output_old/Fkx_data/Fk_x_Pb_c0.5_r_ge_0.001006938631475812.csv",
+      "sha256": "01d00b833b4b86af4b15494a7a007d78eab58a8636eaf4e305e81dd6cc0511d7",
+      "role": "F(k,x) fitted_rmin_1e-3"
+    },
+    {
+      "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/output_old/Fkx_data/Fk_x_Pb_c0.5.csv",
+      "sha256": "67de641f879dbfe155bb26a07d3c321a8190bba3515e1ec183122328fcd8620f",
+      "role": "F(k,x) fitted_all_r"
+    },
+    {
+      "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/from_Jani/Pb_bayes_fourier_transform_c0.5.csv",
+      "sha256": "396541c3c3a01fe3d614957daa75ca9f7b80c3e8184d231b7aff294364c5ea74",
+      "role": "original Fourier metadata and fit identification"
+    },
+    {
+      "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/from_Jani/MVe_bk_bayes_Pb_c1.0.dat",
+      "sha256": "7d0e47f3a8adf9b79ef6ba233d24a62d6d7d9246adc17a1aab6718a2f5726122",
+      "role": "coordinate N for Qs and initial-condition validation",
+      "source_N_range": [
+        1.376891168041532e-12,
+        1.00072114222761
+      ],
+      "initial_max_relative_error": 5.446665340969048e-11
+    },
+    {
+      "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/output_old/Fkx_data/Fk_x_Pb_c1.0_r_ge_0.001006938631475812.csv",
+      "sha256": "343a1c1238c60150198c6e420ce2a5ed9d98ffebf4eb0280fe67670309e33275",
+      "role": "F(k,x) fitted_rmin_1e-3"
+    },
+    {
+      "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/output_old/Fkx_data/Fk_x_Pb_c1.0.csv",
+      "sha256": "283383cc00a3642b31277901f1a5874a3c5b28914dd6fdf0eeff798d5dee54d0",
+      "role": "F(k,x) fitted_all_r"
+    },
+    {
+      "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/from_Jani/Pb_bayes_fourier_transform_c1.0.csv",
+      "sha256": "c4ee98b98f8c12ca2c35df315c85451aa07cfa22f91e3410ed5aa4a460c3d800",
+      "role": "original Fourier metadata and fit identification"
+    }
+  ],
+  "source_fourier_headers": {
+    "p": "Fourier transform of the dipole amplitude: F(k,Y) = \\int d^2 r  1 / (2\\pi)^2 exp(i k r) N(r,Y). S_perp=36.211479 [GeV^-2]. BK-evolved dipole amplitude. Using initial condition from 1309.6963. Parameters in the initial condition: Qs0=0.2469817807045694, ec=35.3, gamma=1, C=2.2293496809607953, LambdaQCD=0.241, alpha_s scheme=balitsky",
+    "Au_c0.5": "Fourier transform of the dipole amplitude: F(k,Y) = \\int d^2 r  1 / (2\\pi)^2 exp(i k r) N(r,Y). S_perp=2451.9996828983994 [GeV^-2]. BK-evolved dipole amplitude. Using initial condition from 1309.6963. Parameters in the initial condition: Qs0=0.4212704119193007, ec=35.3, gamma=1, C=2.2293496809607953, LambdaQCD=0.241, alpha_s scheme=balitsky",
+    "Au_c1.0": "Fourier transform of the dipole amplitude: F(k,Y) = \\int d^2 r  1 / (2\\pi)^2 exp(i k r) N(r,Y). S_perp=1225.9998414491997 [GeV^-2]. BK-evolved dipole amplitude. Using initial condition from 1309.6963. Parameters in the initial condition: Qs0=0.5957663299627755, ec=35.3, gamma=1, C=2.2293496809607953, LambdaQCD=0.241, alpha_s scheme=balitsky",
+    "Pb_c0.5": "Fourier transform of the dipole amplitude: F(k,Y) = \\int d^2 r  1 / (2\\pi)^2 exp(i k r) N(r,Y). S_perp=2542.4464566628685 [GeV^-2]. BK-evolved dipole amplitude. Using initial condition from 1309.6963. Parameters in the initial condition: Qs0=0.42510264663119846, ec=35.3, gamma=1, C=2.2293496809607953, LambdaQCD=0.241, alpha_s scheme=balitsky",
+    "Pb_c1.0": "Fourier transform of the dipole amplitude: F(k,Y) = \\int d^2 r  1 / (2\\pi)^2 exp(i k r) N(r,Y). S_perp=1271.2232283314343 [GeV^-2]. BK-evolved dipole amplitude. Using initial condition from 1309.6963. Parameters in the initial condition: Qs0=0.6011859282665382, ec=35.3, gamma=1, C=2.2293496809607953, LambdaQCD=0.241, alpha_s scheme=balitsky"
+  },
+  "normalization_with_matched_tail": {
+    "p/fitted_rmin_1e-3": [
+      0.9999997456044777,
+      1.0000290178169295
+    ],
+    "p/fitted_all_r": [
+      0.9999998821113755,
+      1.0000684675647566
+    ],
+    "Au_c0.5/fitted_rmin_1e-3": [
+      0.9999999738970591,
+      1.0000824379531608
+    ],
+    "Au_c0.5/fitted_all_r": [
+      0.9999999738004379,
+      1.0002051618990575
+    ],
+    "Au_c1.0/fitted_rmin_1e-3": [
+      0.9999999596851292,
+      1.0001701144424373
+    ],
+    "Au_c1.0/fitted_all_r": [
+      0.9999999861408091,
+      1.0004128553372247
+    ],
+    "Pb_c0.5/fitted_rmin_1e-3": [
+      0.9999997739895508,
+      1.00008397532938
+    ],
+    "Pb_c0.5/fitted_all_r": [
+      0.99999997698186,
+      1.0002090146067775
+    ],
+    "Pb_c1.0/fitted_rmin_1e-3": [
+      0.9999999584558492,
+      1.000173445860658
+    ],
+    "Pb_c1.0/fitted_all_r": [
+      0.9999999866153021,
+      1.000417306844078
+    ]
+  },
+  "notes": [
+    "Initial gamma=1 is the four-parameter HERA fit, not a fixed effective gamma at every evolved x.",
+    "Some source headers call the Fourier integrand N; normalization and the numerical initial condition identify the supplied F as the transform of S=1-N.",
+    "Legacy solver comments in some Au N files differ from their first-line fit identification; the numerical initial condition is independently checked."
+  ]
+}

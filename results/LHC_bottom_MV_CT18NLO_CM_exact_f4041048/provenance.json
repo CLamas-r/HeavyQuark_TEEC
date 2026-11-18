@@ -1,0 +1,398 @@
+{
+  "config": {
+    "collider": "LHC",
+    "quark": "bottom",
+    "sqrt_s": 5020.0,
+    "A": 208.0,
+    "nucleus": "Pb",
+    "proton_area": 36.211479,
+    "eta_frame": "CM",
+    "cm_rapidity": 0.465,
+    "lab_cm_boost": 0.0,
+    "eta1": 4.0,
+    "eta2": 4.0,
+    "mass": 4.75,
+    "alpha_s": 0.2,
+    "alpha_s_mode": "auto",
+    "ren_scale": "pdf_scale",
+    "ren_mu_fixed": 9.5,
+    "ren_scale_factor": 1.0,
+    "T_F": 0.5,
+    "target_model": "MV",
+    "target_options": {
+      "table_path": "data/mv_bk_gamma1.npz",
+      "source_dir": null,
+      "table_variant": "fitted_rmin_1e-3",
+      "interpolation": "linear",
+      "uv_tail": "matched_power",
+      "x_above_x0": "freeze"
+    },
+    "pdf_name": "CT18NLO",
+    "pdf_options": {
+      "member": 0,
+      "data_path": null,
+      "lhapdf_config": null,
+      "range_policy": "error"
+    },
+    "pdf_scale": "pair_mt",
+    "pdf_mu_fixed": 9.5,
+    "xt_max": 0.01,
+    "p_min": 0.0,
+    "p_max": "inf",
+    "radial_scale": 4.75,
+    "kinematics": "exact",
+    "proposal": "auto"
+  },
+  "c_values": [
+    0.5,
+    1.0
+  ],
+  "power": 18,
+  "replicas": 16,
+  "seed": 1949,
+  "curve_points": 121,
+  "tau_plot_range": [
+    0.1,
+    0.9
+  ],
+  "shape_normalization": "full_range_model",
+  "shape_normalization_range": [
+    0.0,
+    1.0
+  ],
+  "figure_font_size_pt": 12.0,
+  "figure_width_inches": 3.15,
+  "figure_annotation_placement": "inside_axes",
+  "figure_layout": "square_joined_panels",
+  "curve_power": 15,
+  "curve_replicas": 8,
+  "curve_seed": 6941,
+  "coupling": {
+    "mode": "lhapdf",
+    "provider": "CT18NLO",
+    "ren_scale": "pdf_scale",
+    "ren_mu_fixed_GeV": 9.5,
+    "ren_scale_factor": 1.0,
+    "description": "CT18NLO alpha_s(mu_R^2), mu_R=1 * mu_F"
+  },
+  "target_provider": {
+    "model": "BK-evolved MV",
+    "table_path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/TEECS/data/mv_bk_gamma1.npz",
+    "table_sha256": "d9bf82c74d853545d1276c76a9e8e15c9e522ce2869d51d248d9570e5967f7d5",
+    "table_variant": "fitted_rmin_1e-3",
+    "interpolation": "linear",
+    "targets": [
+      "p",
+      "Pb_c0.5",
+      "Pb_c1.0"
+    ],
+    "available_densities": [
+      1.0,
+      2.9624960684073702,
+      5.9249921368147405
+    ],
+    "x_range": [
+      1.1253517471925887e-09,
+      0.009999999999999995
+    ],
+    "k_range_GeV": [
+      0.010000000000000004,
+      100.00000000000004
+    ],
+    "initial_condition": {
+      "C_sq": 4.97,
+      "LambdaQCD_GeV": 0.241,
+      "Nf": 3,
+      "Qs0_sq": 0.061,
+      "alpha_s_max": 0.7,
+      "ec": 35.3,
+      "fit": "2311.10491 four-parameter median",
+      "gamma": 1.0,
+      "kernel": "Balitsky"
+    },
+    "fitted_proton_area_GeV2": 36.211479,
+    "normalization": "F(k,x)=integral d2r exp(-ik.r) S(r,x)/(2pi)^2; integral d2k F=1",
+    "low_k": "matched even quadratic expansion of log F in k^2",
+    "uv_tail": "matched_power",
+    "x_above_x0": "freeze",
+    "x_below_grid": "error",
+    "saturation_scale": "S(sqrt(2)/Qs,x)=exp(-1/2), read from the supplied evolved coordinate tables",
+    "sources": [
+      {
+        "initial_max_relative_error": 3.2076552525239777e-10,
+        "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/from_Jani/MVe_bk_bayes_p.dat",
+        "role": "coordinate N for Qs and initial-condition validation",
+        "sha256": "83a51d2283c6b192d574e5d818e5bf8cc04c43a413be214446ad2b3672c58cc9",
+        "source_N_range": [
+          2.323870034335176e-13,
+          1.001378719695022
+        ]
+      },
+      {
+        "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/output_old/Fkx_data/Fk_x_p_r_ge_0.001006938631475812.csv",
+        "role": "F(k,x) fitted_rmin_1e-3",
+        "sha256": "653ceaf7ea44dffb710e25f611caa65333be7fff1152b6f1f604a3b2743997ac"
+      },
+      {
+        "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/output_old/Fkx_data/Fk_x_p.csv",
+        "role": "F(k,x) fitted_all_r",
+        "sha256": "e4ff6525af7580050b807eec01bee63e88a78b5c79c011d39a23d02f0bc89280"
+      },
+      {
+        "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/from_Jani/p_bayes_fourier_transform.csv",
+        "role": "original Fourier metadata and fit identification",
+        "sha256": "0ce7b34480c78c82cda171afe5f30a38b2bd027679091d6a31cf388912552f74"
+      },
+      {
+        "initial_max_relative_error": 7.67881314089891e-11,
+        "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/from_Jani/MVe_bk_bayes_Au_c0.5.dat",
+        "role": "coordinate N for Qs and initial-condition validation",
+        "sha256": "0a4d1f254a4c28d357edc9696d3e508c858364e3673f989e472d4d7a426b409f",
+        "source_N_range": [
+          6.760890709812232e-13,
+          1.001340833658751
+        ]
+      },
+      {
+        "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/output_old/Fkx_data/Fk_x_Au_c0.5_r_ge_0.001006938631475812.csv",
+        "role": "F(k,x) fitted_rmin_1e-3",
+        "sha256": "f9bb9d545304506d77390451a5f590014c0366f2fdf01e06983e1bc643b46903"
+      },
+      {
+        "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/output_old/Fkx_data/Fk_x_Au_c0.5.csv",
+        "role": "F(k,x) fitted_all_r",
+        "sha256": "3349561e9b72576cf762044734e45c5f3966625116871cdab16ba7bfb4362c7a"
+      },
+      {
+        "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/from_Jani/Au_bayes_fourier_transform_c0.5.csv",
+        "role": "original Fourier metadata and fit identification",
+        "sha256": "3dacc885b51b161bc2b61af5acd4c9e41c7d6dcf73868557006e3a57d8789c97"
+      },
+      {
+        "initial_max_relative_error": 5.531530788971395e-11,
+        "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/from_Jani/MVe_bk_bayes_Au_c1.0.dat",
+        "role": "coordinate N for Qs and initial-condition validation",
+        "sha256": "836cb942bba9c47e052d69ebf4c6a7855049f9d62f47ef17de1938d5fdd2e48d",
+        "source_N_range": [
+          1.352178141962446e-12,
+          1.000868890329973
+        ]
+      },
+      {
+        "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/output_old/Fkx_data/Fk_x_Au_c1.0_r_ge_0.001006938631475812.csv",
+        "role": "F(k,x) fitted_rmin_1e-3",
+        "sha256": "7555b2930befa2c48d9e49561dfedeb4c937548c05d6bea8c97317abd665f411"
+      },
+      {
+        "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/output_old/Fkx_data/Fk_x_Au_c1.0.csv",
+        "role": "F(k,x) fitted_all_r",
+        "sha256": "a039271cef5bdcf9e4b6e5f04d011d433af32d5edf4f5985b6fe5be4f63eb912"
+      },
+      {
+        "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/from_Jani/Au_bayes_fourier_transform_c1.0.csv",
+        "role": "original Fourier metadata and fit identification",
+        "sha256": "bffb352ea66eb59d43449adc7cd02202b94b1ed211a9afad5bbc68e4adcfc24b"
+      },
+      {
+        "initial_max_relative_error": 1.1654277543016178e-10,
+        "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/from_Jani/MVe_bk_bayes_Pb_c0.5.dat",
+        "role": "coordinate N for Qs and initial-condition validation",
+        "sha256": "11275b7faa2c2b3743b3f3b919791f71b41c6f0b470d83e93896a91a512cbf9b",
+        "source_N_range": [
+          6.884455840207659e-13,
+          1.00118911333984
+        ]
+      },
+      {
+        "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/output_old/Fkx_data/Fk_x_Pb_c0.5_r_ge_0.001006938631475812.csv",
+        "role": "F(k,x) fitted_rmin_1e-3",
+        "sha256": "01d00b833b4b86af4b15494a7a007d78eab58a8636eaf4e305e81dd6cc0511d7"
+      },
+      {
+        "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/output_old/Fkx_data/Fk_x_Pb_c0.5.csv",
+        "role": "F(k,x) fitted_all_r",
+        "sha256": "67de641f879dbfe155bb26a07d3c321a8190bba3515e1ec183122328fcd8620f"
+      },
+      {
+        "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/from_Jani/Pb_bayes_fourier_transform_c0.5.csv",
+        "role": "original Fourier metadata and fit identification",
+        "sha256": "396541c3c3a01fe3d614957daa75ca9f7b80c3e8184d231b7aff294364c5ea74"
+      },
+      {
+        "initial_max_relative_error": 5.446665340969048e-11,
+        "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/from_Jani/MVe_bk_bayes_Pb_c1.0.dat",
+        "role": "coordinate N for Qs and initial-condition validation",
+        "sha256": "7d0e47f3a8adf9b79ef6ba233d24a62d6d7d9246adc17a1aab6718a2f5726122",
+        "source_N_range": [
+          1.376891168041532e-12,
+          1.00072114222761
+        ]
+      },
+      {
+        "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/output_old/Fkx_data/Fk_x_Pb_c1.0_r_ge_0.001006938631475812.csv",
+        "role": "F(k,x) fitted_rmin_1e-3",
+        "sha256": "343a1c1238c60150198c6e420ce2a5ed9d98ffebf4eb0280fe67670309e33275"
+      },
+      {
+        "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/output_old/Fkx_data/Fk_x_Pb_c1.0.csv",
+        "role": "F(k,x) fitted_all_r",
+        "sha256": "283383cc00a3642b31277901f1a5874a3c5b28914dd6fdf0eeff798d5dee54d0"
+      },
+      {
+        "path": "/Users/carloslamasrodriguez/Desktop/UCLA_Project/DIS_EEC_Numerical_share_to_Carlos/dipole_amplitude_files/from_Jani/Pb_bayes_fourier_transform_c1.0.csv",
+        "role": "original Fourier metadata and fit identification",
+        "sha256": "c4ee98b98f8c12ca2c35df315c85451aa07cfa22f91e3410ed5aa4a460c3d800"
+      }
+    ]
+  },
+  "pdf_provider": {
+    "backend": "LHAPDF C++ batch",
+    "lhapdf_version": "6.5.4",
+    "set": "CT18NLO",
+    "member": 0,
+    "order_qcd": 1,
+    "data_version": 1,
+    "member_path": "/opt/homebrew/Cellar/lhapdf/6.5.4/share/LHAPDF/CT18NLO/CT18NLO_0000.dat",
+    "member_sha256": "375db856d2f8c7087a626c92ebf228d3f080e5de83175519778ffaf6e72e5410",
+    "x_range": [
+      1e-09,
+      1.0
+    ],
+    "mu2_range_GeV2": [
+      1.6770249999999998,
+      10000000000.0
+    ],
+    "range_policy": "error"
+  },
+  "python": "3.12.4",
+  "numpy": "1.26.4",
+  "target": "MV",
+  "pdf": "CT18NLO",
+  "proposal": "powerlaw",
+  "tau_points": [
+    0.00017133751222135998,
+    0.0006852326227130629,
+    0.001541333133436012,
+    0.0027390523158633312,
+    0.004277569313094794,
+    0.0061558297024311365,
+    0.008372546218022704,
+    0.010926199633097178,
+    0.013815039801161699,
+    0.01703708685546585,
+    0.02059013256590347,
+    0.024471741852423214,
+    0.028679254453910803,
+    0.03320978675139912,
+    0.03806023374435662,
+    0.043227271178699546,
+    0.04870735782506969,
+    0.05449673790581606,
+    0.06059144366901731,
+    0.06698729810778066,
+    0.0736799178229539,
+    0.08066471602728797,
+    0.08793690568899215,
+    0.09549150281252627,
+    0.1,
+    0.10332332985438239,
+    0.11142701927151455,
+    0.11979701719998452,
+    0.12842758726130285,
+    0.13731281449385618,
+    0.14644660940672624,
+    0.15582271215312296,
+    0.16543469682057085,
+    0.17527597583490817,
+    0.18533980447508122,
+    0.19561928549563964,
+    0.20610737385376346,
+    0.21679688153758353,
+    0.22768048249248646,
+    0.23875071764202557,
+    0.24999999999999994,
+    0.26142061987019577,
+    0.2730047501302265,
+    0.2847444515958524,
+    0.29663167846209976,
+    0.3086582838174551,
+    0.32081602522734987,
+    0.3330965703831144,
+    0.3454915028125263,
+    0.35799232764803857,
+    0.3705904774487395,
+    0.3832773180720473,
+    0.39604415459112025,
+    0.4088822372539262,
+    0.4217827674798846,
+    0.43473690388997416,
+    0.4477357683661731,
+    0.4607704521360776,
+    0.47383202187852796,
+    0.48691152584606334,
+    0.4999999999999999,
+    0.5130884741539364,
+    0.5261679781214719,
+    0.5392295478639223,
+    0.5522642316338268,
+    0.5652630961100258,
+    0.5782172325201155,
+    0.5911177627460736,
+    0.6039558454088795,
+    0.6167226819279528,
+    0.6294095225512604,
+    0.6420076723519611,
+    0.6545084971874737,
+    0.6669034296168854,
+    0.67918397477265,
+    0.6913417161825449,
+    0.7033683215379,
+    0.7152555484041475,
+    0.7269952498697734,
+    0.7385793801298041,
+    0.7499999999999999,
+    0.7612492823579744,
+    0.7723195175075134,
+    0.7832031184624162,
+    0.7938926261462367,
+    0.8043807145043602,
+    0.8146601955249185,
+    0.8247240241650917,
+    0.8345653031794289,
+    0.8441772878468771,
+    0.8535533905932737,
+    0.8626871855061437,
+    0.8715724127386971,
+    0.8802029828000155,
+    0.8885729807284853,
+    0.8966766701456175,
+    0.8999999999999999,
+    0.9045084971874736,
+    0.9120630943110076,
+    0.919335283972712,
+    0.9263200821770461,
+    0.9330127018922192,
+    0.9394085563309827,
+    0.9455032620941839,
+    0.9512926421749303,
+    0.9567727288213004,
+    0.9619397662556434,
+    0.9667902132486007,
+    0.9713207455460893,
+    0.9755282581475768,
+    0.9794098674340964,
+    0.9829629131445341,
+    0.9861849601988383,
+    0.9890738003669027,
+    0.9916274537819774,
+    0.9938441702975689,
+    0.9957224306869051,
+    0.9972609476841365,
+    0.9984586668665639,
+    0.9993147673772869,
+    0.9998286624877786
+  ],
+  "scope": "cross-branch Q-Qbar pair counted once; fixed pseudorapidities",
+  "convergence_checks": false,
+  "approximation_checks": false
+}

@@ -1,0 +1,100 @@
+{
+  "numerator": {
+    "label": "$x_{t,\\max}=1$",
+    "config": {
+      "collider": "LHC",
+      "quark": "charm",
+      "sqrt_s": 5020.0,
+      "A": 208.0,
+      "nucleus": "Pb",
+      "proton_area": 58.0,
+      "eta_frame": "CM",
+      "cm_rapidity": 0.465,
+      "lab_cm_boost": 0.0,
+      "eta1": 4.0,
+      "eta2": 4.0,
+      "mass": 1.5,
+      "alpha_s": 0.2,
+      "T_F": 0.5,
+      "target_model": "toy_MV",
+      "target_options": {
+        "qs0_sq": 1.0,
+        "x0": 0.000304,
+        "lambda": 0.29,
+        "lambda_ir": 0.2,
+        "fft_points": 8192,
+        "scale_points": 193,
+        "nu_min": 0.001,
+        "nu_max": 10000.0
+      },
+      "pdf_name": "toy",
+      "pdf_options": {
+        "lambda": 0.2,
+        "beta": 5.0,
+        "norm": 1.0
+      },
+      "pdf_scale": "pair_mt",
+      "pdf_mu_fixed": 3.0,
+      "xt_max": 1.0,
+      "p_min": 0.0,
+      "p_max": "inf",
+      "radial_scale": 1.5,
+      "kinematics": "exact",
+      "proposal": "auto"
+    }
+  },
+  "denominator": {
+    "label": "$x_{t,\\max}=0.01$",
+    "config": {
+      "collider": "LHC",
+      "quark": "charm",
+      "sqrt_s": 5020.0,
+      "A": 208.0,
+      "nucleus": "Pb",
+      "proton_area": 58.0,
+      "eta_frame": "CM",
+      "cm_rapidity": 0.465,
+      "lab_cm_boost": 0.0,
+      "eta1": 4.0,
+      "eta2": 4.0,
+      "mass": 1.5,
+      "alpha_s": 0.2,
+      "T_F": 0.5,
+      "target_model": "toy_MV",
+      "target_options": {
+        "qs0_sq": 1.0,
+        "x0": 0.000304,
+        "lambda": 0.29,
+        "lambda_ir": 0.2,
+        "fft_points": 8192,
+        "scale_points": 193,
+        "nu_min": 0.001,
+        "nu_max": 10000.0
+      },
+      "pdf_name": "toy",
+      "pdf_options": {
+        "lambda": 0.2,
+        "beta": 5.0,
+        "norm": 1.0
+      },
+      "pdf_scale": "pair_mt",
+      "pdf_mu_fixed": 3.0,
+      "xt_max": 0.01,
+      "p_min": 0.0,
+      "p_max": "inf",
+      "radial_scale": 1.5,
+      "kinematics": "exact",
+      "proposal": "auto"
+    }
+  },
+  "definition": "100 * (RpA_numerator / RpA_denominator - 1)",
+  "normalization": "differential RpA; no unit-area normalization",
+  "curve_power": 15,
+  "curve_replicas": 8,
+  "curve_seed": 6941,
+  "tau_plot_range": [
+    0.1,
+    0.9
+  ],
+  "fixed_note": "Exact kinematics"
+}
